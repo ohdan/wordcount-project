@@ -1,0 +1,25 @@
+<html>
+
+<header>
+</header>
+
+<body>
+<h1> This is the count results page! </h1>
+<p> There are <strong> {{ count }} words </strong> in your text. </p>
+
+<a href="{% url 'homepage' %}"> Start again! </a>
+
+<h2> You have entered: </h2>
+{{ entered_text }}
+
+<h2> The word count details are: </h2>
+
+{% for x,y in word_dict %}
+
+{{ x }} - {{ y }}
+<br/>
+
+{% endfor %}
+</body>
+
+</html>

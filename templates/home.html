@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <title> This is the title nested in the header! </title>
+</head>
+
+<body>
+  <a href="{% url 'aboutme' %}"> About me </a>
+
+
+  <h1> Wordcount </h1>
+  <p> This is a wordcount paragraph </p>
+  <p> This is a wordcount paragraph with a <br/> line break </p>
+  <h2> {{ hithere }} </h2>
+
+<form action="{% url 'count' %}">
+  <textarea cols="40" rows="20" name="fulltext"></textarea>
+  <br/>
+  <input type="submit" value="Count!"></input>
+</form>
+
+</body>
+
+</html>
